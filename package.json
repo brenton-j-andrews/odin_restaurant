@@ -1,0 +1,28 @@
+{
+  "name": "odin_restraunt",
+  "version": "1.0.0",
+  "description": "Restruant Page project for the Odin Project: https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/restaurant-page#introduction",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brenton-j-andrews/odin_restraunt.git"
+  },
+
+  "author": "brenton andrews",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brenton-j-andrews/odin_restraunt/issues"
+  },
+
+  "homepage": "https://github.com/brenton-j-andrews/odin_restraunt#readme",
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}
