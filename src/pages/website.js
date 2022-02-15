@@ -1,5 +1,6 @@
 import homePage from "./home_page";
 import menuPage from "./menu_page";
+import contactPage from "./contact_page";
 
 // Create the nav bar.
 const createNavBar = function(content) {
@@ -26,6 +27,7 @@ const createNavBar = function(content) {
     home_btn.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         activeButton(e);
+        homePage();
     });
 
 
@@ -36,6 +38,7 @@ const createNavBar = function(content) {
     menu_btn.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         activeButton(e);
+        menuPage();
     });
 
 
@@ -46,9 +49,8 @@ const createNavBar = function(content) {
     contact_btn.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         activeButton(e);
+        contactPage();
     });
-
-
 
     nav_bar_btns.appendChild(home_btn);
     nav_bar_btns.appendChild(menu_btn);
@@ -67,11 +69,17 @@ const activeButton = function(button) {
     button.target.classList.add("active");
 }
 
-
+// "page_content" div reset. This div is where elements unique to each page are rendered.
+const pageContentDiv = function(content) {
+    const page_content = document.createElement("main");
+    content.appendChild(page_content);
+}
 
 const siteContents = function() {
     const content = document.querySelector("#content");
     createNavBar(content);
+    pageContentDiv(content);
+    homePage();
 }
 
 export default siteContents;

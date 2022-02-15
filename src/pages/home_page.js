@@ -1,22 +1,61 @@
 import MyImage from "../assets/pictures/chicken_rice.jpg";
-import createNavBar from "./website";
-
+import foodObjectArr from "../food_objects";
+import contactPage from "./contact_page";
 
 // Create the main page content -> "About" paragraph and special of the day!
-const homePage = function(content) {
-    const main_section = document.createElement("div");
+const homePage = function() {
+    const home_contents = document.querySelector("main");
+    home_contents.innerHTML = "";
+    home_contents.className = "main-section-wrapper";
+
+    // "Special of the day" content wrapper.
+    const daily_special_wrapper = document.createElement("div");
+    daily_special_wrapper.className = "special-wrapper";
+
+    // Daily special header.
+    const daily_special_title = document.createElement("p");
+    daily_special_title.className = "daily-special-title";
+    daily_special_title.textContent = `Special of the day: ${foodObjectArr[0].dish_name}`;
+    daily_special_wrapper.appendChild(daily_special_title);
+
+
+    // Daily special lower div...
+    const daily_special_lower = document.createElement("div");
+    daily_special_lower.className = "daily-special-lower";
+
+
+    // Daily special image.
     const special_of_the_day = document.createElement("img");
-    special_of_the_day.src = MyImage;
-    special_of_the_day.className = "special-of-the-day-img";
+    special_of_the_day.src = foodObjectArr[0].image_url;
+    daily_special_lower.appendChild(special_of_the_day);
 
-    main_section.className = "main-section-wrapper";
-    main_section.appendChild(special_of_the_day);
-    
+    // Daily special description.
+    const daily_special_description = document.createElement("p");
+    daily_special_description.className = "daily-special-paragraph";
+    daily_special_description.textContent = foodObjectArr[0].description;
+    daily_special_lower.appendChild(daily_special_description);
 
-    // main_section.append(special_of_the_day);
-    content.appendChild(main_section);
+    daily_special_wrapper.appendChild(daily_special_lower);
+
+
+    // "About Us" section styling.
+    const about_wrapper = document.createElement("div");
+    about_wrapper.className = "about-wrapper";
+
+    // Daily special header.
+    const about_us_title = document.createElement("p");
+    about_us_title.className = "about-us-title";
+    about_us_title.textContent = `About Us:`;
+    about_wrapper.appendChild(about_us_title);
+
+
+    home_contents.appendChild(daily_special_wrapper);
+    home_contents.appendChild(about_wrapper);
+
 
 }
 
 
 export default homePage;
+
+
