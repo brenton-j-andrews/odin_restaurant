@@ -10,6 +10,8 @@
     padding: 0px;
 }
 
+/* Nav Bar Styling. Search || to jump sections */
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -44,8 +46,14 @@
     transition: all .5s ease-in-out;
 }
 
+.nav-btn.active {
+    background-color: var(--nav-bar-btn-hover-slate);
+    color: white;
+}
+
+
  /*  || Main section styling */
-.main-section-wrapper {
+ .main-section-wrapper {
     background-color: var(--text-slate);
 
     display: flex;

@@ -1,5 +1,4 @@
-import homePage from "./pages/home_page";
-import "./styles/home_page.css";
+import siteContents from "./pages/website";
+import "./styles/styles.css";
 
-homePage();
-
+siteContents();
