@@ -42,20 +42,26 @@ const homePage = function() {
     const about_wrapper = document.createElement("div");
     about_wrapper.className = "about-wrapper";
 
-    // Daily special header.
+    // About Us header.
     const about_us_title = document.createElement("p");
     about_us_title.className = "about-us-title";
     about_us_title.textContent = `About Us:`;
     about_wrapper.appendChild(about_us_title);
 
+    //  "About Us" paragraph and box.
+    const about_inner_wrapper = document.createElement("div");
+    about_inner_wrapper.className = "about-inner-wrapper";
+    about_wrapper.appendChild(about_inner_wrapper);
+    
+    const about_paragraph = document.createElement("p");
+    about_paragraph.className = "about-paragraph";
+    about_paragraph.textContent = "Some people say that the sign of a good restaurant is a small menu focused on one particular style of food. They are probably correct, but that is alright because this isn't a real restaurant! The menu here is just a bunch of my favorite foods."
+    about_inner_wrapper.appendChild(about_paragraph);
+
+
 
     home_contents.appendChild(daily_special_wrapper);
     home_contents.appendChild(about_wrapper);
-
-
 }
 
-
 export default homePage;
-
-
