@@ -1,4 +1,4 @@
-import MyImage from "../assets/pictures/chicken_rice.jpg";
+import MyImage from "../assets/pictures/entrees/chicken_rice.jpg";
 import foodObjectArr from "../food_objects";
 import contactPage from "./contact_page";
 
@@ -15,7 +15,7 @@ const homePage = function() {
     // Daily special header.
     const daily_special_title = document.createElement("p");
     daily_special_title.className = "daily-special-title";
-    daily_special_title.textContent = `Special of the day: ${foodObjectArr[0].dish_name}`;
+    daily_special_title.textContent = `Special of the day: ${foodObjectArr[3].name}`;
     daily_special_wrapper.appendChild(daily_special_title);
 
 
@@ -26,13 +26,13 @@ const homePage = function() {
 
     // Daily special image.
     const special_of_the_day = document.createElement("img");
-    special_of_the_day.src = foodObjectArr[0].image_url;
+    special_of_the_day.src = foodObjectArr[3].image_url;
     daily_special_lower.appendChild(special_of_the_day);
 
     // Daily special description.
     const daily_special_description = document.createElement("p");
     daily_special_description.className = "daily-special-paragraph";
-    daily_special_description.textContent = foodObjectArr[0].description;
+    daily_special_description.textContent = foodObjectArr[3].description;
     daily_special_lower.appendChild(daily_special_description);
 
     daily_special_wrapper.appendChild(daily_special_lower);
@@ -57,8 +57,6 @@ const homePage = function() {
     about_paragraph.className = "about-paragraph";
     about_paragraph.textContent = "Some people say that the sign of a good restaurant is a small menu focused on one particular style of food. They are probably correct, but that is alright because this isn't a real restaurant! The menu here is just a bunch of my favorite foods."
     about_inner_wrapper.appendChild(about_paragraph);
-
-
 
     home_contents.appendChild(daily_special_wrapper);
     home_contents.appendChild(about_wrapper);

@@ -79,7 +79,7 @@ const informationBar = function(content) {
         order_btn.textContent = "Order Now";
     } else {
         order_div_title.textContent = "We are closed. Sorry!"
-        order_btn.textContent = "Order Tomorrow!";
+        order_btn.textContent = "Order Later!";
     }
 
     order_div.appendChild(order_div_title);
@@ -110,6 +110,7 @@ const informationBar = function(content) {
     contact_info.appendChild(hours2);
 
     const address1 = document.createElement("p");
+    address1.className = "address-1";
     address1.textContent = "1054 Somewhere Street";
     contact_info.appendChild(address1);
 

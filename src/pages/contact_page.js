@@ -2,7 +2,7 @@
 const contactPage = function() {
     const contact_contents = document.querySelector("main");
     contact_contents.innerHTML = "";
-    contact_contents.textContent = "hello from the contact page!"; 
+    contact_contents.textContent = "Hello from the contact page! Since all the contact info is pasted to the bottom of each page, this page is redundent!"; 
 }
 
 

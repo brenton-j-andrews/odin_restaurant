@@ -8,10 +8,15 @@
 * {
     margin: 0px;
     padding: 0px;
-    background-color: var(--nav-bar-slate);
 }
 
+html, body {
+    height: 100%;
+}
 
+#content {
+    height: 100%;
+}
 /* Nav Bar Styling. Search || to jump sections */
 
 .nav-bar {
@@ -57,7 +62,7 @@ button:hover {
  /*  || Main section styling */
  .main-section-wrapper {
     background-color: var(--text-slate);
-
+    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -138,8 +143,66 @@ button:hover {
     background-color: var(--text-slate);
 }
 
+/* || Menu page styling */
+.menu-contents-wrapper {
+    background-color: var(--text-slate);
+    gap: 25px;
+    padding: 25px;
+}
+
+.menu-title {
+    font-size: 24px;
+    text-align: center;
+    margin: 25px;
+    padding-bottom: 25px;
+
+    border-bottom: 5px solid var(--nav-bar-slate);;
+}
+
+.menu-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--text-slate);
+    padding-top: 25px;
+    gap: 25px;
+}
+
+.food-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 5px;
+    background-color: var(--text-slate);
+}
+
+.food-description {
+    width: 80%;
+    text-align: center;
+}
+
+.dish-title {
+    font-size: 20px;
+}
+
+.food-img {
+    width: 160px;
+    height: auto;
+    object-fit:scale-down;
+
+    border: 3px solid var(--nav-bar-btn-hover-slate);
+    border-radius: 5px;
+
+    margin: 15px;
+}
+
 /* Information bar Styling */
 .information-bar-wrapper {
+    position: sticky;
+    bottom: 0px;
+
     background-color: var(--nav-bar-slate);
 
     display: grid;
