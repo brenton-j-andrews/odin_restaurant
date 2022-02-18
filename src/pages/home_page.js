@@ -1,5 +1,5 @@
 import foodObjectArr from "../food_objects";
-import contactPage from "./contact_page";
+import myImage from "../pictures/entrees/chicken_rice.jpg";
 
 // Create the main page content -> "About" paragraph and special of the day!
 const homePage = function() {
@@ -25,7 +25,7 @@ const homePage = function() {
 
     // Daily special image.
     const special_of_the_day = document.createElement("img");
-    special_of_the_day.src = foodObjectArr[3].image_url;
+    special_of_the_day.src = myImage;
     daily_special_lower.appendChild(special_of_the_day);
 
     // Daily special description.
