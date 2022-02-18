@@ -14,7 +14,7 @@ const app_1 = new Dish("App", "Nachos", "../src/assets/pictures/apps/nachos.jpeg
 const app_2 = new Dish("App", "Satay", "../src/assets/pictures/apps/satay.jpeg", "Flavorful chicken skewers served with a peanut dipping sauce.");
 const app_3 = new Dish("App", "Blooming Onion", "../src/assets/pictures/apps/blooming_onion.jpeg", "An appitizer for the health conscious. One serving of veggies!");
 
-const entree_1 = new Dish("Entree", "Hainanese Chicken Rice", "../src/assets/pictures/entrees/chicken_rice.jpg", "The national dish of Singapore! It might sound like a minute rice flavour but it is so much more.")
+const entree_1 = new Dish("Entree", "Hainanese Chicken Rice", "../dist/pictures/entrees/chicken_rice.jpg", "The national dish of Singapore! It might sound like a minute rice flavour but it is so much more.")
 const entree_2 = new Dish("Entree", "Chicken and Waffles", "../src/assets/pictures/entrees/chicken_waffles.jpeg", "Crispy fried chicken, fresh waffles, and maple syrup. Yummy!");
 const entree_3 = new Dish("Entree", "Chili Crab", "../src/assets/pictures/entrees/chili_crab.jpg", "Another Singapore Classic!");
 const entree_4 = new Dish("Entree", "Tacos al Pastor", "../src/assets/pictures/entrees/tacos.jpeg", "Who doesn't like tacos?");
