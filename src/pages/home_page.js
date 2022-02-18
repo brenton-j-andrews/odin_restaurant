@@ -1,4 +1,3 @@
-import MyImage from "../assets/pictures/entrees/chicken_rice.jpg";
 import foodObjectArr from "../food_objects";
 import contactPage from "./contact_page";
 
